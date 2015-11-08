@@ -46,6 +46,7 @@ C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\roslyn\VBCSCompiler.exe
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\VisitMe2.dll.config
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\VisitMe2.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\VisitMe2.pdb
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\XmlDocument.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\EntityFramework.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\EntityFramework.SqlServer.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.AspNet.Identity.Core.dll

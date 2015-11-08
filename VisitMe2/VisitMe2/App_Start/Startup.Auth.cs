@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using System.Web.Mvc;
 using Microsoft.Owin.Security.OAuth;
 using VisitMe2.Providers;
 
@@ -15,7 +16,7 @@ namespace VisitMe2
         public void Configuration(IAppBuilder app)
         {
             HttpConfiguration config = new HttpConfiguration();
-
+            AreaRegistration.RegisterAllAreas();
             ConfigureOAuth(app);
 
             WebApiConfig.Register(config);

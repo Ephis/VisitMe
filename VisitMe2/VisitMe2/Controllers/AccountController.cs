@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.Http.Description;
 using Microsoft.AspNet.Identity;
 using VisitMe2.Models;
 
@@ -20,7 +21,14 @@ namespace VisitMe2.Controllers
             _repo = new AuthRepository();
         }
 
+
+        /// <summary>
+        /// Create a new login
+        /// </summary>
+        /// <param name="login">String userName, String password, String email</param>
+        /// <returns></returns>
         //POST api/Account/Register
+        [ApiExplorerSettings(IgnoreApi = false)]
         [AllowAnonymous]
         [Route("Register")]
         public async Task<IHttpActionResult> Register(Login login)
