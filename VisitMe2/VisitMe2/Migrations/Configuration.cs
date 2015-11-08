@@ -1,3 +1,5 @@
+using VisitMe2.Models;
+
 namespace VisitMe2.Migrations
 {
     using System;
@@ -26,6 +28,13 @@ namespace VisitMe2.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            
+
+            context.cards.AddOrUpdate(
+                new Card { fName = "Marck", lName = "Jensen", email = "marck@khyme.dk", phone = "60132428"},
+                new Card { fName = "Nicolai", lName = "Reigstad", email = "nicolai@reigstad.dk", phone = "41814743" },
+                new Card { fName = "Hawkar", lName = "Peshabahar", email = "hawkar@Peshabahar.dk", phone = "60180322" }
+                );
         }
     }
 }

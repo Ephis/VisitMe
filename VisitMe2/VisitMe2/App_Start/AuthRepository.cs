@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -8,13 +10,13 @@ namespace VisitMe2
 {
     public class AuthRepository : IDisposable
     {
-        private AuthContext _ctx;
+        private VistmeContext _ctx;
 
         private UserManager<IdentityUser> _userManager;
 
         public AuthRepository()
         {
-            _ctx = new AuthContext();
+            _ctx = new VistmeContext();
             _userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>(_ctx));
         }
 
@@ -34,7 +36,7 @@ namespace VisitMe2
             IdentityUser user = await _userManager.FindAsync(username, password);
 
             return user;
-        } 
+        }
          
         public void Dispose()
         {

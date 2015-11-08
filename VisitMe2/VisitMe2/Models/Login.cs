@@ -23,6 +23,13 @@ namespace VisitMe2.Models
         [Display(Name = "Password")]
         public String password { get; set; }
 
+        public Account account = new Account();
+
+        public void addAccount(Account account)
+        {
+            this.account = account;
+        }
+
 
     }
 }

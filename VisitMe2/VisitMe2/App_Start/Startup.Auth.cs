@@ -29,7 +29,7 @@ namespace VisitMe2
             {
                 AllowInsecureHttp = true,
                 TokenEndpointPath = new PathString("/token"),
-                AccessTokenExpireTimeSpan =  TimeSpan.FromDays(99999999),
+                AccessTokenExpireTimeSpan =  TimeSpan.FromDays(999),
                 Provider = new SimpleAuthorizationServerProvider()
             };
 

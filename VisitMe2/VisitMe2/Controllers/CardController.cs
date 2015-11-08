@@ -9,6 +9,7 @@ using VisitMe2.Models;
 
 namespace VisitMe2.Controllers
 {
+    [RoutePrefix("api/Cards")]
     public class CardController : ApiController
     {
         [Authorize]

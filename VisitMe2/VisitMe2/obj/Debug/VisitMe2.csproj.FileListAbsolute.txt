@@ -31,8 +31,6 @@ C:\Users\Nicolai\Documents\Visual Studio 2015\Projects\VisitMe2\VisitMe2\obj\Deb
 C:\Users\Nicolai\Documents\Visual Studio 2015\Projects\VisitMe2\VisitMe2\obj\Debug\VisitMe2.pdb
 C:\Users\Nicolai\Documents\Visual Studio 2015\Projects\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.init.resources
 C:\Users\Nicolai\Documents\Visual Studio 2015\Projects\VisitMe2\VisitMe2\obj\Debug\VisitMe2.csproj.GenerateResource.Cache
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.init.resources
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.csproj.GenerateResource.Cache
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\roslyn\csc.exe
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -50,17 +48,26 @@ C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\VisitMe2.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\VisitMe2.pdb
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\EntityFramework.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\EntityFramework.SqlServer.dll
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.AspNet.Identity.Owin.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Cors.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.dll
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Host.HttpListener.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Hosting.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Security.Cookies.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Security.dll
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Security.OAuth.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Newtonsoft.Json.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Owin.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Net.Http.Formatting.dll
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Cors.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Helpers.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Http.dll
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Http.Owin.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Http.WebHost.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Mvc.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Razor.dll
@@ -69,12 +76,20 @@ C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.WebPages.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.WebPages.Razor.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\EntityFramework.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\EntityFramework.SqlServer.xml
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.xml
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Cors.xml
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Host.HttpListener.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Hosting.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Security.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Helpers.xml
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Http.Owin.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Mvc.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Razor.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.WebPages.xml
@@ -84,5 +99,14 @@ C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Newtonsoft.Json.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Net.Http.Formatting.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Http.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Http.WebHost.xml
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.init.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.LoginSystemTryedAdded.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.AuthContext.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.IdentityDbContextAdded.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.IdentityDbContextRemovedFromWrongPlaces.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.IdentityUserMaybeFix.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.PrøverIgen.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.AccountAddedToLogin.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.csproj.GenerateResource.Cache
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.pdb

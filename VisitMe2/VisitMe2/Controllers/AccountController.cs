@@ -10,6 +10,7 @@ using VisitMe2.Models;
 
 namespace VisitMe2.Controllers
 {
+    [RoutePrefix("api/Account")]
     public class AccountController : ApiController
     {
         private AuthRepository _repo = null;

@@ -14,9 +14,10 @@ namespace VisitMe2.Models
         public String email { get; set; }
         [Required]
         public String apiKey { get; set; }
-        public List<Card> cards { get; set; }
-        [Required]
-        public Login login { get; set; }
+
+        public List<Card> ownCards = new List<Card>();
+
+        public List<Card> allowedCards = new List<Card>();
 
     }
 }
