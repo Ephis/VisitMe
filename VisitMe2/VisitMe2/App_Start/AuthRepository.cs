@@ -24,7 +24,8 @@ namespace VisitMe2
         {
             IdentityUser user = new IdentityUser
             {
-                UserName = login.username
+                UserName = login.username,
+                Email = login.email
             };
             var result = await _userManager.CreateAsync(user, login.password);
 

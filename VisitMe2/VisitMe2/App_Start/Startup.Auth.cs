@@ -16,7 +16,6 @@ namespace VisitMe2
         public void Configuration(IAppBuilder app)
         {
             HttpConfiguration config = new HttpConfiguration();
-            AreaRegistration.RegisterAllAreas();
             ConfigureOAuth(app);
 
             WebApiConfig.Register(config);

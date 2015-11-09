@@ -176,6 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Global.asax" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -218,6 +219,9 @@
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\RecivedCardsController.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201511041955164_init.cs" />
     <Compile Include="Migrations\201511041955164_init.Designer.cs">
       <DependentUpon>201511041955164_init.cs</DependentUpon>

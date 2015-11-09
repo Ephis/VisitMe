@@ -112,3 +112,4 @@ C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.csproj.G
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.pdb
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.EditInLogin.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.csprojResolveAssemblyReference.cache

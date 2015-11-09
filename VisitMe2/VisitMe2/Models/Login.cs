@@ -22,6 +22,7 @@ namespace VisitMe2.Models
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public String password { get; set; }
+        
 
 
     }
