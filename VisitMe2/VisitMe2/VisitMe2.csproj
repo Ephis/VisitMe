@@ -250,6 +250,10 @@
     <Compile Include="Migrations\201511080248016_AccountAddedToLogin.Designer.cs">
       <DependentUpon>201511080248016_AccountAddedToLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511090014582_EditInLogin.cs" />
+    <Compile Include="Migrations\201511090014582_EditInLogin.Designer.cs">
+      <DependentUpon>201511090014582_EditInLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\AuthContext.cs" />
@@ -318,6 +322,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511080248016_AccountAddedToLogin.resx">
       <DependentUpon>201511080248016_AccountAddedToLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511090014582_EditInLogin.resx">
+      <DependentUpon>201511090014582_EditInLogin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
