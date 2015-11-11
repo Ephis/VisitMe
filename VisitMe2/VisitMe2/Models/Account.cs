@@ -11,9 +11,6 @@ namespace VisitMe2.Models
         public int id { get; set; }
         public String fName { get; set; }
         public String lName { get; set; }
-        public String email { get; set; }
-        [Required]
-        public String apiKey { get; set; }
 
         public List<Card> ownCards = new List<Card>();
 

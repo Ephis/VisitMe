@@ -48,7 +48,7 @@ namespace VisitMe2.Controllers
                 return errorResult;
             }
 
-            return Ok();
+            return Ok(result);
         }
 
         protected override void Dispose(bool disposing)

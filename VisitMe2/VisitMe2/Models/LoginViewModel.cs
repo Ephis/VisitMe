@@ -24,7 +24,10 @@ namespace VisitMe2.Models
         public String password { get; set; }
         
         [Required]
-        public Account account { get; set; }
+        public String fName { get; set; }
+
+        [Required]
+        public String lName { get; set; }
 
 
     }

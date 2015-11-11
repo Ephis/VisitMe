@@ -15,6 +15,11 @@ namespace VisitMe2.Models
 
         public Account account { get; set; }
 
+        public ApplicationUser()
+        {
+            account = new Account();
+        }
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);

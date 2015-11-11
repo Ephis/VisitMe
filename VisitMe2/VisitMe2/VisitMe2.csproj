@@ -262,6 +262,18 @@
     <Compile Include="Migrations\201511110143261_CustomizedIdentityUser.Designer.cs">
       <DependentUpon>201511110143261_CustomizedIdentityUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511110151458_AccountChanged.cs" />
+    <Compile Include="Migrations\201511110151458_AccountChanged.Designer.cs">
+      <DependentUpon>201511110151458_AccountChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511110215489_removedAccountFromIdentityUser.cs" />
+    <Compile Include="Migrations\201511110215489_removedAccountFromIdentityUser.Designer.cs">
+      <DependentUpon>201511110215489_removedAccountFromIdentityUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511110219428_AddedAccountBackToApplicationUser.cs" />
+    <Compile Include="Migrations\201511110219428_AddedAccountBackToApplicationUser.Designer.cs">
+      <DependentUpon>201511110219428_AddedAccountBackToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -337,6 +349,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511110143261_CustomizedIdentityUser.resx">
       <DependentUpon>201511110143261_CustomizedIdentityUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511110151458_AccountChanged.resx">
+      <DependentUpon>201511110151458_AccountChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511110215489_removedAccountFromIdentityUser.resx">
+      <DependentUpon>201511110215489_removedAccountFromIdentityUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511110219428_AddedAccountBackToApplicationUser.resx">
+      <DependentUpon>201511110219428_AddedAccountBackToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

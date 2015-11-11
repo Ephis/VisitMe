@@ -31,16 +31,6 @@ C:\Users\Nicolai\Documents\Visual Studio 2015\Projects\VisitMe2\VisitMe2\obj\Deb
 C:\Users\Nicolai\Documents\Visual Studio 2015\Projects\VisitMe2\VisitMe2\obj\Debug\VisitMe2.pdb
 C:\Users\Nicolai\Documents\Visual Studio 2015\Projects\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.init.resources
 C:\Users\Nicolai\Documents\Visual Studio 2015\Projects\VisitMe2\VisitMe2\obj\Debug\VisitMe2.csproj.GenerateResource.Cache
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.init.resources
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.LoginSystemTryedAdded.resources
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.AuthContext.resources
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.IdentityDbContextAdded.resources
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.IdentityDbContextRemovedFromWrongPlaces.resources
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.IdentityUserMaybeFix.resources
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.PrøverIgen.resources
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.AccountAddedToLogin.resources
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.EditInLogin.resources
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.csproj.GenerateResource.Cache
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\roslyn\csc.exe
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -110,6 +100,19 @@ C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\Newtonsoft.Json.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Net.Http.Formatting.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Http.xml
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\bin\System.Web.Http.WebHost.xml
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.init.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.LoginSystemTryedAdded.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.AuthContext.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.IdentityDbContextAdded.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.IdentityDbContextRemovedFromWrongPlaces.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.IdentityUserMaybeFix.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.PrøverIgen.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.AccountAddedToLogin.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.EditInLogin.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.CustomizedIdentityUser.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.AccountChanged.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.csproj.GenerateResource.Cache
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.pdb
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.CustomizedIdentityUser.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.removedAccountFromIdentityUser.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.AddedAccountBackToApplicationUser.resources

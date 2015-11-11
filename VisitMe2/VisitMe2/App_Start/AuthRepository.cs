@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Migrations;
 using System.Threading.Tasks;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
@@ -21,16 +22,19 @@ namespace VisitMe2
             _userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>(_ctx));
         }
 
-        public async Task<IdentityResult> RegisterUser(LoginViewModel login)
+        public async Task<IdentityResult> RegisterUser(LoginViewModel model)
         {
             var user = new ApplicationUser
             {
-                UserName = login.username,
-                Email = login.email
+                UserName = model.username,
+                Email = model.email
             };
 
-            user.account = login.account;
-            var result = await _userManager.CreateAsync(user, login.password);
+            //Adding the extra atributes
+            user.account.fName = model.fName;
+            user.account.lName = model.lName;
+
+            var result = await _userManager.CreateAsync(user, model.password);
 
             return result;
         }
