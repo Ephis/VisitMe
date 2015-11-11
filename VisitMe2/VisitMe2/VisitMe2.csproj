@@ -258,11 +258,16 @@
     <Compile Include="Migrations\201511090014582_EditInLogin.Designer.cs">
       <DependentUpon>201511090014582_EditInLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511110143261_CustomizedIdentityUser.cs" />
+    <Compile Include="Migrations\201511110143261_CustomizedIdentityUser.Designer.cs">
+      <DependentUpon>201511110143261_CustomizedIdentityUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\AuthContext.cs" />
     <Compile Include="Models\Card.cs" />
-    <Compile Include="Models\Login.cs" />
+    <Compile Include="Models\LoginViewModel.cs" />
     <Compile Include="Models\RecivedCards.cs" />
     <Compile Include="Models\VistmeContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -329,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511090014582_EditInLogin.resx">
       <DependentUpon>201511090014582_EditInLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511110143261_CustomizedIdentityUser.resx">
+      <DependentUpon>201511110143261_CustomizedIdentityUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

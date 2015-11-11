@@ -15,7 +15,6 @@ namespace VisitMe2.Models
             
         }
         public DbSet<Card> cards { get; set; }
-        public List<Login> logins { get; set; }
         public DbSet<RecivedCards> recovedCards { get; set; }
         public DbSet<Account> accounts { get; set; } 
     }

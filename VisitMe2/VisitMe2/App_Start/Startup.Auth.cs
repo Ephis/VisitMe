@@ -23,6 +23,8 @@ namespace VisitMe2
             app.UseWebApi(config);
         }
 
+
+        //Get token path /token
         public void ConfigureOAuth(IAppBuilder app)
         {
             OAuthAuthorizationServerOptions oAuthAuthorizationServerOptions = new OAuthAuthorizationServerOptions()

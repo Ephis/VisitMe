@@ -481,7 +481,7 @@
             </summary>
             <param name="documentPath">The physical path to XML document.</param>
         </member>
-        <member name="M:VisitMe2.Controllers.AccountController.Register(VisitMe2.Models.Login)">
+        <member name="M:VisitMe2.Controllers.AccountController.Register(VisitMe2.Models.LoginViewModel)">
             <summary>
             Create a new login
             </summary>

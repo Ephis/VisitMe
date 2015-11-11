@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
+using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using VisitMe2.Models;
 
@@ -31,7 +32,7 @@ namespace VisitMe2.Controllers
         [ApiExplorerSettings(IgnoreApi = false)]
         [AllowAnonymous]
         [Route("Register")]
-        public async Task<IHttpActionResult> Register(Login login)
+        public async Task<IHttpActionResult> Register(LoginViewModel login)
         {
             if (!ModelState.IsValid)
             {

@@ -7,7 +7,7 @@ using System.Web.Mvc;
 
 namespace VisitMe2.Models
 {
-    public class Login
+    public class LoginViewModel
     {
         public int id { get; set; }
         [Required]
@@ -23,6 +23,8 @@ namespace VisitMe2.Models
         [Display(Name = "Password")]
         public String password { get; set; }
         
+        [Required]
+        public Account account { get; set; }
 
 
     }
