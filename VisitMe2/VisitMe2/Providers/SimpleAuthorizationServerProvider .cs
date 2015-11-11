@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Web;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin.Security.OAuth;
+using VisitMe2.Models;
 
 namespace VisitMe2.Providers
 {
@@ -20,10 +21,12 @@ namespace VisitMe2.Providers
         {
 
             context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
+            var identity = new ClaimsIdentity(context.Options.AuthenticationType);
+
 
             using (AuthRepository _repo = new AuthRepository())
             {
-                IdentityUser user = await _repo.FindUser(context.UserName, context.Password);
+                ApplicationUser user = (ApplicationUser) await _repo.FindUser(context.UserName, context.Password);
 
                 if (user == null)
                 {
@@ -32,8 +35,7 @@ namespace VisitMe2.Providers
                 }
             }
 
-            var identity = new ClaimsIdentity(context.Options.AuthenticationType);
-            identity.AddClaim(new Claim("sub", context.UserName));
+            identity.AddClaim(new Claim(ClaimTypes.Name, context.UserName));
             identity.AddClaim(new Claim("role", "user"));
 
             context.Validated(identity);

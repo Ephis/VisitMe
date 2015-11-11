@@ -8,6 +8,8 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin.Security;
 using VisitMe2.Models;
 
 namespace VisitMe2.Controllers
@@ -17,9 +19,15 @@ namespace VisitMe2.Controllers
     {
         private AuthRepository _repo = null;
 
+        private VistmeContext _ctx;
+
+        private UserManager<IdentityUser> _userManager;
+
         public AccountController()
         {
             _repo = new AuthRepository();
+            _ctx = new VistmeContext();
+            _userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>(_ctx));
         }
 
 
@@ -50,6 +58,16 @@ namespace VisitMe2.Controllers
 
             return Ok(result);
         }
+
+        [Authorize]
+        [Route("CurrentUser")]
+        public async Task<IHttpActionResult> GetCurrentUser()
+        {
+
+            var user = User.Identity.Name;
+
+            return Ok(user);
+        } 
 
         protected override void Dispose(bool disposing)
         {

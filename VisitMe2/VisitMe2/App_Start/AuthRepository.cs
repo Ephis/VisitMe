@@ -39,9 +39,9 @@ namespace VisitMe2
             return result;
         }
 
-        public async Task<IdentityUser> FindUser(string username, string password)
+        public async Task<ApplicationUser> FindUser(string username, string password)
         {
-            IdentityUser user = await _userManager.FindAsync(username, password);
+            ApplicationUser user = (ApplicationUser) await _userManager.FindAsync(username, password);
 
             return user;
         }
