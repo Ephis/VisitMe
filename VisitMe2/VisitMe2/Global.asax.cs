@@ -14,6 +14,7 @@ namespace VisitMe2
         protected void Application_Start(object sender, EventArgs e)
         {
             AreaRegistration.RegisterAllAreas();
+
         }
 
         protected void Session_Start(object sender, EventArgs e)

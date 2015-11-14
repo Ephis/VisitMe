@@ -16,5 +16,7 @@ namespace VisitMe2.Models
 
         public List<Card> allowedCards = new List<Card>();
 
+        public String userId { get; set; }
+
     }
 }

@@ -274,12 +274,25 @@
     <Compile Include="Migrations\201511110219428_AddedAccountBackToApplicationUser.Designer.cs">
       <DependentUpon>201511110219428_AddedAccountBackToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511131523014_ApplicationUserInContext.cs" />
+    <Compile Include="Migrations\201511131523014_ApplicationUserInContext.Designer.cs">
+      <DependentUpon>201511131523014_ApplicationUserInContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511140223424_AddedUserToAcount.cs" />
+    <Compile Include="Migrations\201511140223424_AddedUserToAcount.Designer.cs">
+      <DependentUpon>201511140223424_AddedUserToAcount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511140326248_CardChanged.cs" />
+    <Compile Include="Migrations\201511140326248_CardChanged.Designer.cs">
+      <DependentUpon>201511140326248_CardChanged.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\AuthContext.cs" />
     <Compile Include="Models\Card.cs" />
-    <Compile Include="Models\LoginViewModel.cs" />
+    <Compile Include="Models\ViewModels\CardViewModel.cs" />
+    <Compile Include="Models\ViewModels\LoginViewModel.cs" />
     <Compile Include="Models\RecivedCards.cs" />
     <Compile Include="Models\VistmeContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -358,6 +371,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511110219428_AddedAccountBackToApplicationUser.resx">
       <DependentUpon>201511110219428_AddedAccountBackToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511131523014_ApplicationUserInContext.resx">
+      <DependentUpon>201511131523014_ApplicationUserInContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511140223424_AddedUserToAcount.resx">
+      <DependentUpon>201511140223424_AddedUserToAcount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511140326248_CardChanged.resx">
+      <DependentUpon>201511140326248_CardChanged.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

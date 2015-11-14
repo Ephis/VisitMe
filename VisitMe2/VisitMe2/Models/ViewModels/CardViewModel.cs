@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace VisitMe2.Models
+namespace VisitMe2.Models.ViewModels
 {
-    public class Card
+    public class CardViewModel
     {
-        public int id { get; set; }
         public String fName { get; set; }
         public String lName { get; set; }
         public String phone { get; set; }
@@ -15,6 +14,5 @@ namespace VisitMe2.Models
         public String email { get; set; }
         public String company { get; set; }
         public String position { get; set; }
-        public int ownerId { get; set; }
     }
 }

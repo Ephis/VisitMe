@@ -13,11 +13,10 @@ namespace VisitMe2.Models
     public class ApplicationUser : IdentityUser
     {
 
-        public Account account { get; set; }
+        public Boolean firstLogin { get; set; }
 
         public ApplicationUser()
         {
-            account = new Account();
         }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager, String authenticationType)

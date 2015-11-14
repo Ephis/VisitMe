@@ -111,9 +111,12 @@ C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migratio
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.EditInLogin.resources
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.CustomizedIdentityUser.resources
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.AccountChanged.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.removedAccountFromIdentityUser.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.AddedAccountBackToApplicationUser.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.ApplicationUserInContext.resources
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.csproj.GenerateResource.Cache
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.dll
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.pdb
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.removedAccountFromIdentityUser.resources
-C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.AddedAccountBackToApplicationUser.resources
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.csprojResolveAssemblyReference.cache
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.AddedUserToAcount.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.CardChanged.resources

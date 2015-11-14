@@ -7,7 +7,7 @@ using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace VisitMe2.Models
 {
-    public class VistmeContext : IdentityDbContext<IdentityUser>
+    public class VistmeContext : IdentityDbContext<ApplicationUser>
     {
 
         public VistmeContext() : base("VisitMeContext")

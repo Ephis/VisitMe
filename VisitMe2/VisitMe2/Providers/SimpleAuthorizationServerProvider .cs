@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -33,10 +34,25 @@ namespace VisitMe2.Providers
                     context.SetError("invalid_grant", "The user name or password is incorrect.");
                     return;
                 }
+                if (user.firstLogin == true)
+                {
+                    try
+                    {
+                        Account account = new Account();
+                        account.userId = user.Id;
+                        VistmeContext ctx = new VistmeContext();
+                        ctx.accounts.Add(account);
+                        ctx.SaveChanges();
+                        user.firstLogin = false;
+                        await _repo.UpdateUser(user);
+                    }
+                    catch (Exception e) { }
+                }
             }
 
             identity.AddClaim(new Claim(ClaimTypes.Name, context.UserName));
             identity.AddClaim(new Claim("role", "user"));
+            identity.AddClaim(new Claim("username", context.UserName));
 
             context.Validated(identity);
 

@@ -14,12 +14,12 @@ namespace VisitMe2
     {
         private VistmeContext _ctx;
 
-        private UserManager<IdentityUser> _userManager;
+        private UserManager<ApplicationUser> _userManager;
 
         public AuthRepository()
         {
             _ctx = new VistmeContext();
-            _userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>(_ctx));
+            _userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(_ctx));
         }
 
         public async Task<IdentityResult> RegisterUser(LoginViewModel model)
@@ -27,12 +27,9 @@ namespace VisitMe2
             var user = new ApplicationUser
             {
                 UserName = model.username,
-                Email = model.email
+                Email = model.email,
             };
-
-            //Adding the extra atributes
-            user.account.fName = model.fName;
-            user.account.lName = model.lName;
+            user.firstLogin = model.firstLogin;
 
             var result = await _userManager.CreateAsync(user, model.password);
 
@@ -44,6 +41,13 @@ namespace VisitMe2
             ApplicationUser user = (ApplicationUser) await _userManager.FindAsync(username, password);
 
             return user;
+        }
+
+        public async Task<IdentityResult> UpdateUser(ApplicationUser user)
+        {
+            var result = await _userManager.UpdateAsync(user);
+
+            return result;
         }
          
         public void Dispose()

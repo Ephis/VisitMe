@@ -485,7 +485,7 @@
             <summary>
             Create a new login
             </summary>
-            <param name="login">String userName, String password, String email</param>
+            <param name="login">String userName, String password, String email, String fName, String lName</param>
             <returns></returns>
         </member>
     </members>

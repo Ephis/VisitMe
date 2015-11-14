@@ -9,7 +9,6 @@ namespace VisitMe2.Models
 {
     public class LoginViewModel
     {
-        public int id { get; set; }
         [Required]
         [Display(Name = "User name")]
         public String username { get; set; }
@@ -22,12 +21,9 @@ namespace VisitMe2.Models
         [DataType(DataType.Password)]
         [Display(Name = "Password")]
         public String password { get; set; }
-        
-        [Required]
-        public String fName { get; set; }
 
-        [Required]
-        public String lName { get; set; }
+        public Boolean firstLogin { get; set; }
+
 
 
     }

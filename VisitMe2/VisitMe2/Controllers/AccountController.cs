@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
+using System.Web.Security;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -21,20 +22,20 @@ namespace VisitMe2.Controllers
 
         private VistmeContext _ctx;
 
-        private UserManager<IdentityUser> _userManager;
+        private UserManager<ApplicationUser> _userManager;
 
         public AccountController()
         {
             _repo = new AuthRepository();
             _ctx = new VistmeContext();
-            _userManager = new UserManager<IdentityUser>(new UserStore<IdentityUser>(_ctx));
+            _userManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(_ctx));
         }
 
 
         /// <summary>
         /// Create a new login
         /// </summary>
-        /// <param name="login">String userName, String password, String email</param>
+        /// <param name="login">String userName, String password, String email, String fName, String lName</param>
         /// <returns></returns>
         //POST api/Account/Register
         [ApiExplorerSettings(IgnoreApi = false)]
@@ -46,9 +47,8 @@ namespace VisitMe2.Controllers
             {
                 return BadRequest(ModelState);
             }
-
+            login.firstLogin = true;
             IdentityResult result = await _repo.RegisterUser(login);
-
             IHttpActionResult errorResult = GetErrorResult(result);
 
             if (errorResult != null)
@@ -64,9 +64,11 @@ namespace VisitMe2.Controllers
         public async Task<IHttpActionResult> GetCurrentUser()
         {
 
-            var user = User.Identity.Name;
-
-            return Ok(user);
+            var user = User.Identity.GetUserName();
+            var real = await _userManager.FindByNameAsync(user);
+            var realUser = await _userManager.FindByIdAsync(real.Id);
+            var account =  _ctx.accounts.Where(b => b.userId == realUser.Id);
+            return Ok(account);
         } 
 
         protected override void Dispose(bool disposing)
