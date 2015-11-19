@@ -120,3 +120,5 @@ C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.pdb
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.csprojResolveAssemblyReference.cache
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.AddedUserToAcount.resources
 C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.CardChanged.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.CardRequestAdded.resources
+C:\Users\Nicolai\Documents\VisitMe\VisitMe2\VisitMe2\obj\Debug\VisitMe2.Migrations.realCardRequestAdded.resources

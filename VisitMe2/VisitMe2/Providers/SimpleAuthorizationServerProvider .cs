@@ -40,6 +40,7 @@ namespace VisitMe2.Providers
                     {
                         Account account = new Account();
                         account.userId = user.Id;
+                        account.accountState = Account.AccountState.Open;
                         VistmeContext ctx = new VistmeContext();
                         ctx.accounts.Add(account);
                         ctx.SaveChanges();

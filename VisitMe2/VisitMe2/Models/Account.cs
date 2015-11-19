@@ -8,6 +8,13 @@ namespace VisitMe2.Models
 {
     public class Account
     {
+        public enum AccountState
+        {
+            Open = 1,
+            CanSend = 2,
+            Closed = 0
+        }
+
         public int id { get; set; }
         public String fName { get; set; }
         public String lName { get; set; }
@@ -17,6 +24,8 @@ namespace VisitMe2.Models
         public List<Card> allowedCards = new List<Card>();
 
         public String userId { get; set; }
+
+        public AccountState accountState { get; set; }
 
     }
 }

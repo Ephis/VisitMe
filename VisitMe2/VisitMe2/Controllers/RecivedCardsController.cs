@@ -9,5 +9,6 @@ namespace VisitMe2.Controllers
 {
     public class RecivedCardsController : ApiController
     {
+
     }
 }
