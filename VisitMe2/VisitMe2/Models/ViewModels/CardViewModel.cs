@@ -14,5 +14,11 @@ namespace VisitMe2.Models.ViewModels
         public String email { get; set; }
         public String company { get; set; }
         public String position { get; set; }
+
+        public CardViewModel()
+        {
+            
+        }
+
     }
 }
