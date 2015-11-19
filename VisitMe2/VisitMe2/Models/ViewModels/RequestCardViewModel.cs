@@ -9,9 +9,9 @@ namespace VisitMe2.Models.ViewModels
     public class RequestCardViewModel
     {
         [Required]
-        public String reciverId { get; set; }
+        public int reciverId { get; set; }
         [Required]
-        public String cardId { get; set; }
+        public int cardId { get; set; }
         [Required]
         public int requestType { get; set; }
 
