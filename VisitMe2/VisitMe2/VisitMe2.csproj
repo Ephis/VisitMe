@@ -295,6 +295,10 @@
     <Compile Include="Migrations\201511192051533_realCardRequestAdded.Designer.cs">
       <DependentUpon>201511192051533_realCardRequestAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511192214592_IdsAsInts.cs" />
+    <Compile Include="Migrations\201511192214592_IdsAsInts.Designer.cs">
+      <DependentUpon>201511192214592_IdsAsInts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -305,6 +309,7 @@
     <Compile Include="Models\ViewModels\LoginViewModel.cs" />
     <Compile Include="Models\RecivedCards.cs" />
     <Compile Include="Models\ViewModels\RequestCardViewModel.cs" />
+    <Compile Include="Models\ViewModels\RequestIDviewModel.cs" />
     <Compile Include="Models\VistmeContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\SimpleAuthorizationServerProvider .cs" />
@@ -397,6 +402,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511192051533_realCardRequestAdded.resx">
       <DependentUpon>201511192051533_realCardRequestAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511192214592_IdsAsInts.resx">
+      <DependentUpon>201511192214592_IdsAsInts.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

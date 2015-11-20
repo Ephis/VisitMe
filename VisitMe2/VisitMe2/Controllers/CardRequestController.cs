@@ -40,7 +40,7 @@ namespace VisitMe2.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest("ModelState is not valid");
             }
 
             Card.CardState cardState = _ctx.cards.FirstOrDefault(c => c.id == model.cardId).cardState;
@@ -71,21 +71,21 @@ namespace VisitMe2.Controllers
 
         [Authorize]
         [Route("accept")]
-        public IHttpActionResult AcceptRequest(int requestId)
+        public IHttpActionResult AcceptRequest(RequestIDviewModel model)
         {
-            CardRequest request =_ctx.cardRequests.FirstOrDefault(r => r.id == requestId);
+            CardRequest request =_ctx.cardRequests.FirstOrDefault(r => r.id == model.requestId);
             Account acc = getAccount();
             if (request.reciverId != acc.id)
             {
                 return BadRequest("You are not the reciver for this request");
             }
 
-            if (request.requestState != CardRequest.RequestState.ReciverNotifyed ||
-                request.requestState != CardRequest.RequestState.Standby ||
-                request.requestState == CardRequest.RequestState.RequestRejected ||
-                request.requestState == CardRequest.RequestState.Done)
+            if (request.requestState != CardRequest.RequestState.Standby)
             {
-                return BadRequest("You cannot make that action on this request");
+                if (request.requestState != CardRequest.RequestState.ReciverNotifyed)
+                {
+                    return BadRequest("You cannot make that action on this request");
+                }
             }
 
             if (request.requestState == CardRequest.RequestState.RequestAccepted)
@@ -102,9 +102,9 @@ namespace VisitMe2.Controllers
 
         [Authorize]
         [Route("reject")]
-        public IHttpActionResult RejectRequest(int requestId)
+        public IHttpActionResult RejectRequest(RequestIDviewModel model)
         {
-            CardRequest request = _ctx.cardRequests.FirstOrDefault(r => r.id == requestId);
+            CardRequest request = _ctx.cardRequests.FirstOrDefault(r => r.id == model.requestId);
             Account acc = getAccount();
             if (request.reciverId != acc.id)
             {
@@ -112,9 +112,7 @@ namespace VisitMe2.Controllers
             }
 
             if (request.requestState != CardRequest.RequestState.ReciverNotifyed ||
-                request.requestState != CardRequest.RequestState.Standby ||
-                request.requestState == CardRequest.RequestState.RequestAccepted ||
-                request.requestState == CardRequest.RequestState.Done)
+                request.requestState != CardRequest.RequestState.Standby)
             {
                 return BadRequest("You cannot make that action on this request");
             }
@@ -140,26 +138,33 @@ namespace VisitMe2.Controllers
 
         [Authorize]
         [Route("takeCard")]
-        public IHttpActionResult TakeRequestedCard(int requestId)
+        public IHttpActionResult TakeRequestedCard(RequestIDviewModel model)
         {
-            CardRequest request = _ctx.cardRequests.FirstOrDefault(r => r.id == requestId);
+            CardRequest request = _ctx.cardRequests.FirstOrDefault(r => r.id == model.requestId);
             Account acc = getAccount();
-            if (request.reciverId != acc.id)
+            if (request.senderId != acc.id)
             {
                 return BadRequest("You are not the reciver for this request");
             }
 
-            if (request.requestState == CardRequest.RequestState.ReciverNotifyed ||
-                request.requestState == CardRequest.RequestState.Standby ||
-                request.requestState != CardRequest.RequestState.RequestAccepted ||
-                request.requestState == CardRequest.RequestState.Done)
+            if (request.requestState != CardRequest.RequestState.RequestAccepted)
             {
+                if(request.requestState != CardRequest.RequestState.RequestRejected)
                 return BadRequest("You cannot make that action on this request");
             }
 
             if (request.requestState == CardRequest.RequestState.Done)
             {
                 return Ok();
+            }
+
+            if (request.requestState == CardRequest.RequestState.RequestRejected)
+            {
+                CardRequest returnRequest = request;
+                request.requestState = CardRequest.RequestState.Done;
+                _ctx.cardRequests.AddOrUpdate(request);
+                _ctx.SaveChangesAsync();
+                return Ok(returnRequest);
             }
 
             request.requestState = CardRequest.RequestState.Done;
