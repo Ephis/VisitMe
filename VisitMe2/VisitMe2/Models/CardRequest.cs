@@ -24,9 +24,9 @@ namespace VisitMe2.Models
 
 
         public int id { get; set; }
-        public int senderId { get; set; }
-        public int reciverId { get; set; }
-        public int cardId { get; set; }
+        public Account sender { get; set; }
+        public Account reciver { get; set; }
+        public Card card { get; set; }
         public CardRequestType requestType { get; set; }
         public RequestState requestState { get; set; }
 

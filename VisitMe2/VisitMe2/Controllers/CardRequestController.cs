@@ -31,9 +31,17 @@ namespace VisitMe2.Controllers
         public IHttpActionResult GetMyRequests()
         {
             Account acc = getAccount();
-            return Ok(_ctx.cardRequests.Where(r => r.reciverId == acc.id || r.senderId == acc.id));
+            return Ok(_ctx.cardRequests.Where(r => r.reciver.id == acc.id || r.sender.id == acc.id));
         }
-    
+
+        [Authorize]
+        [Route("pending")]
+        public IHttpActionResult PendingRequests()
+        {
+            Account acc = getAccount();
+            return Ok(from request in _ctx.cardRequests.Include("card").Include("reciver").Include("sender").Where( r => r.reciver.id == acc.id && r.requestState == CardRequest.RequestState.Standby || r.requestState == CardRequest.RequestState.ReciverNotifyed) select request);
+        }
+
         [Authorize]
         [Route("create")]
         public IHttpActionResult CreateRequest(RequestCardViewModel model)
@@ -43,14 +51,14 @@ namespace VisitMe2.Controllers
                 return BadRequest("ModelState is not valid");
             }
 
-            Card.CardState cardState = _ctx.cards.FirstOrDefault(c => c.id == model.cardId).cardState;
-            if (cardState == Card.CardState.Closed)
+            Card card = _ctx.cards.FirstOrDefault(c => c.id == model.cardId);
+            if (card.cardState == Card.CardState.Closed)
             {
                 return BadRequest("Card can not be shared");
             }
 
-            Account.AccountState reciverState = _ctx.accounts.FirstOrDefault(a => a.id == model.reciverId).accountState;
-            if (reciverState != Account.AccountState.Open)
+            Account reciver = _ctx.accounts.FirstOrDefault(a => a.id == model.reciverId);
+            if (reciver.accountState != Account.AccountState.Open)
             {
                 return BadRequest("Card can not be shared");
             }
@@ -58,15 +66,15 @@ namespace VisitMe2.Controllers
             Account acc = getAccount();
 
             CardRequest request = new CardRequest();
-            request.senderId = acc.id;
-            request.reciverId = model.reciverId;
-            request.cardId = model.cardId;
+            request.sender = acc;
+            request.reciver = reciver;
+            request.card = card;
             request.requestType = request.getRequestTypeFromInt(model.requestType);
 
             _ctx.cardRequests.Add(request);
             _ctx.SaveChanges();
             
-            return Ok();
+            return Ok(request);
         }
 
         [Authorize]
@@ -75,7 +83,7 @@ namespace VisitMe2.Controllers
         {
             CardRequest request =_ctx.cardRequests.FirstOrDefault(r => r.id == model.requestId);
             Account acc = getAccount();
-            if (request.reciverId != acc.id)
+            if (request.reciver.id != acc.id)
             {
                 return BadRequest("You are not the reciver for this request");
             }
@@ -106,7 +114,7 @@ namespace VisitMe2.Controllers
         {
             CardRequest request = _ctx.cardRequests.FirstOrDefault(r => r.id == model.requestId);
             Account acc = getAccount();
-            if (request.reciverId != acc.id)
+            if (request.reciver.id != acc.id)
             {
                 return BadRequest("You are not the reciver for this request");
             }
@@ -142,7 +150,7 @@ namespace VisitMe2.Controllers
         {
             CardRequest request = _ctx.cardRequests.FirstOrDefault(r => r.id == model.requestId);
             Account acc = getAccount();
-            if (request.senderId != acc.id)
+            if (request.sender.id != acc.id)
             {
                 return BadRequest("You are not the reciver for this request");
             }
@@ -170,12 +178,14 @@ namespace VisitMe2.Controllers
             request.requestState = CardRequest.RequestState.Done;
             _ctx.cardRequests.AddOrUpdate(request);
 
-            IQueryable<Card> cardQueryable = _ctx.cards.Where(c => c.id == request.cardId);
+            IQueryable<Card> cardQueryable = _ctx.cards.Where(c => c.id == request.card.id);
             Card card = cardQueryable.First();
             if (card != null)
             {
-                acc.allowedCards.Add(card);
-                _ctx.accounts.AddOrUpdate(acc);
+                RecivedCards rc = new RecivedCards();
+                rc.account = acc;
+                rc.card = card;
+                _ctx.recivedCards.AddOrUpdate();
             }
 
 

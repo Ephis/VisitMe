@@ -299,6 +299,18 @@
     <Compile Include="Migrations\201511192214592_IdsAsInts.Designer.cs">
       <DependentUpon>201511192214592_IdsAsInts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201511201426532_RecivedCardChanged.cs" />
+    <Compile Include="Migrations\201511201426532_RecivedCardChanged.Designer.cs">
+      <DependentUpon>201511201426532_RecivedCardChanged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511201703571_MadeObjectiv.cs" />
+    <Compile Include="Migrations\201511201703571_MadeObjectiv.Designer.cs">
+      <DependentUpon>201511201703571_MadeObjectiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511220309044_RecivedCardsMadeObjective.cs" />
+    <Compile Include="Migrations\201511220309044_RecivedCardsMadeObjective.Designer.cs">
+      <DependentUpon>201511220309044_RecivedCardsMadeObjective.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -405,6 +417,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511192214592_IdsAsInts.resx">
       <DependentUpon>201511192214592_IdsAsInts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511201426532_RecivedCardChanged.resx">
+      <DependentUpon>201511201426532_RecivedCardChanged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511201703571_MadeObjectiv.resx">
+      <DependentUpon>201511201703571_MadeObjectiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511220309044_RecivedCardsMadeObjective.resx">
+      <DependentUpon>201511220309044_RecivedCardsMadeObjective.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

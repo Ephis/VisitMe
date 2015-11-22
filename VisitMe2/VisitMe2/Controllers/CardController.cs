@@ -46,7 +46,7 @@ namespace VisitMe2.Controllers
             card.fax = returnEmptyStringIfNull(model.fax);
             card.phone = returnEmptyStringIfNull(model.phone);
             card.position = returnEmptyStringIfNull(model.position);
-            card.ownerId = acc.id;
+            card.owner = acc;
             card = _ctx.cards.Add(card);
             _ctx.SaveChanges();
 
@@ -69,7 +69,7 @@ namespace VisitMe2.Controllers
             {
                 return BadRequest();
             }
-            if (card.ownerId == acc.id)
+            if (card.owner.id == acc.id)
             {
                 _ctx.cards.AddOrUpdate(card);
                 _ctx.SaveChanges();
@@ -88,7 +88,7 @@ namespace VisitMe2.Controllers
         {
             VistmeContext db = new VistmeContext();
             Account acc = getAccount();
-            return Ok(db.cards.Where( c => c.ownerId == acc.id));
+            return Ok(db.cards.Where( c => c.owner.id == acc.id));
         }
 
         [Authorize]

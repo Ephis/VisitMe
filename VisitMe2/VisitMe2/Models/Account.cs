@@ -18,13 +18,7 @@ namespace VisitMe2.Models
         public int id { get; set; }
         public String fName { get; set; }
         public String lName { get; set; }
-
-        public List<Card> ownCards = new List<Card>();
-
-        public List<Card> allowedCards = new List<Card>();
-
         public String userId { get; set; }
-
         public AccountState accountState { get; set; }
 
     }

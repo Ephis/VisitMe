@@ -21,7 +21,7 @@ namespace VisitMe2.Models
         public String email { get; set; }
         public String company { get; set; }
         public String position { get; set; }
-        public int ownerId { get; set; }
+        public Account owner { get; set; }
         public CardState cardState { get; set; }
 
         public Card()
